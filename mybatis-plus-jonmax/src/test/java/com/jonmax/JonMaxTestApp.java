@@ -211,6 +211,7 @@ public class JonMaxTestApp {
     @Test
     public void testOrderAll() {
         orderMapper.findAllOrders();
+
     }
 
     @Test
@@ -237,5 +238,11 @@ public class JonMaxTestApp {
         List<User> userList = userService.list().
                 stream().filter(user -> user.getId().equals(1L)).collect(Collectors.toList());
         System.out.println(userList);
+    }
+
+    @Test
+    public void testDelete1() {
+       orderMapper.deleteById(1L);
+        orderMapper.selectList(null);
     }
 }
