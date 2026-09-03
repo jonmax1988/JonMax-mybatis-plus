@@ -1,0 +1,10 @@
+dubbo:
+  application:
+    name: max-dubbo-server
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.jonmax.server

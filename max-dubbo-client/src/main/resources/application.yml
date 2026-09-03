@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: max-dubbo-client
+    qos-enable: true
+    qos-port: 22223
+  registry:
+    address: nacos://127.0.0.1:8848
+
